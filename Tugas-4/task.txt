@@ -1,0 +1,48 @@
+Soal
+
+1. Apa itu TCP?
+2. Coba jelaskan pengiriman data menggunakan TCP!
+3. Apa itu IP Address?
+4. Kenapa setiap device yang connect ke internet harus punya IP Address?
+5. Apakah NAT sama dengan Gateway?
+6. Apa perbedaan IP Public dan IP Internal?
+
+Jawaban
+
+1. TCP adalah singkatan dari Transmission Control Protocol, yaitu salah satu protokol yang sangat penting dalam suite protokol Internet (TCP/IP) yang mendasari
+jaringan internet dan banyak jaringan komputer modern.
+TCP digunakan untuk mengatur dan mengendalikan pengiriman data antara perangkat dalam jaringan.
+
+2. langkah-langkah pengiriman data menggunakan Transmission Control Protocol (TCP):
+1). pengiriman data menggunakan TCP dimulai dengan Membangun Koneks, Komunikasi dimulai dengan pengiriman permintaan untuk membuka koneksi dari perangkat pengirim (client)
+ke perangkat penerima (server) kemudian Server merespons dengan permintaan koneksi yang berhasil (disebut sebagai "Three-way Handshake") dengan mengirimkan ACK (acknowledgement)
+kepada pengirim.
+2).Segmentasi Data,  Data yang akan dikirimkan dibagi menjadi segmen-segmen yang lebih kecil. Setiap segmen memiliki nomor urutan yang memastikan 
+urutan pengiriman dan pengaturan ukuran jendela (window size) untuk mengontrol aliran.
+3). Pengiriman Segmen yaitu Setiap segmen dikirimkan melalui jaringan ke perangkat penerima. Segmen mungkin melewati banyak perangkat jaringan, seperti router, sebelum mencapai
+ tujuan akhir.
+4). Penerimaan dan Konfirmasi, yaitu Setiap kali perangkat penerima menerima segmen, ia mengirimkan konfirmasi kembali kepada pengirim yang berisi nomor urutan segmen yang telah diterima (ACK).
+Jika segmen tidak tiba dengan benar, atau konfirmasinya terlambat atau hilang, pengirim akan mengirimkan ulang segmen tersebut.
+5). Pengurutan dan Penggabungan Segmen, perangkat penerima mengurutkan segmen-segmen berdasarkan nomor urutan yang diterima.
+Segmen-segmen kemudian digabungkan kembali ke dalam urutan yang benar untuk membentuk data asli.
+6). Flow Control, Perangkat penerima mengatur ukuran jendela (window size) yang mengontrol berapa banyak data yang dapat dikirimkan oleh pengirim sebelum menerima konfirmasi.
+7). Pengiriman Ulang (Retransmission), Jika perangkat penerima tidak menerima konfirmasi (ACK) untuk suatu segmen dalam waktu yang wajar atau menerima konfirmasi negatif (NAK), pengirim akan mengirimkan ulang segmen tersebut.
+8). Penutupan Koneksi, setelah data selesai dikirimkan, salah satu perangkat (pengirim atau penerima) mengirimkan permintaan untuk menutup koneksi.
+Kedua perangkat berkomunikasi untuk memastikan semua data telah diterima atau dikirim sebelum koneksi ditutup dengan aman.
+
+3. ip address adalah identitas angka yang digunakan semua perangkat komputer agar dapat saling terhubung dalam jaringan internet.
+IP address digunakan untuk pengalamatan packet sehingga mereka dapat melakukan perjalanan melintasi jaringan dan tiba di tujuan yang benar.
+
+4. berikut alasan kenapa setiap perangkat perlu memiliki alamat IP:
+1). Rute dan Pengiriman Data: Alamat IP memungkinkan perangkat-perangkat di Internet untuk berkomunikasi dan mengirimkan data satu sama lain. Ketika data dikirimkan dari satu perangkat ke perangkat lain, alamat IP membantu router dan perangkat jaringan lainnya untuk mengarahkan data ke tujuan yang tepat.
+2). Unik dan Identifikasi: Alamat IP memastikan bahwa setiap perangkat memiliki identifikasi yang unik di jaringan. Ini memungkinkan perangkat lain untuk membedakan antara satu perangkat dengan perangkat lainnya, sehingga komunikasi dan interaksi dapat berlangsung dengan benar.
+3). Routing dan Pengelompokan: Jaringan internet sangat besar dan terdiri dari banyak perangkat dan sub-jaringan yang berbeda. Alamat IP memungkinkan jaringan dan router untuk memecah dan mengelompokkan perangkat berdasarkan lokasi dan tujuan, sehingga data dapat bergerak melalui jaringan dengan efisien.
+4). Komunikasi dan Layanan: Banyak layanan dan protokol di internet bergantung pada alamat IP untuk berfungsi. Misalnya, saat Anda mengakses situs web, alamat IP digunakan untuk mengarahkan permintaan Anda ke server web yang sesuai.
+5). Manajemen dan Keamanan: Alamat IP memungkinkan administrator jaringan untuk mengelola dan mengamankan perangkat dalam jaringan. Ini memungkinkan mereka untuk menerapkan kebijakan keamanan, mengidentifikasi potensi ancaman, dan melacak aktivitas jaringan.
+6). Koneksi ke Jaringan Eksternal: Untuk berkomunikasi dengan jaringan luar, seperti internet, perangkat harus memiliki alamat IP yang dikenali oleh jaringan global. Ini memungkinkan perangkat untuk berbicara dengan perangkat lain di seluruh dunia.
+
+5. berbeda, karena NAT berfokus pada pengubahan alamat IP dalam paket data untuk memungkinkan berbagi alamat IP di jaringan lokal sedangkan Gateway adalah perangkat 
+yang menghubungkan dua jaringan yang berbeda dan memungkinkan komunikasi di antara keduanya, serta berfungsi sebagai pintu masuk atau keluar dari jaringan.
+
+6. IP Public adalah alamat khusus yang diberikan kepada perangkat Anda ketika terhubung ke internet. Ini seperti alamat rumah yang unik untuk Anda di seluruh dunia internet. Alamat IP Public digunakan saat Anda ingin berbicara dengan perangkat lain di internet, seperti mengakses situs web atau layanan online sedangkan IP Internal
+ adalah alamat yang digunakan dalam jaringan rumah atau kantor Anda. Ini seperti alamat yang Anda gunakan di dalam gedung atau lingkungan tempat tinggal Anda. Alamat IP Internal tidak bisa diakses langsung dari internet, tetapi digunakan oleh perangkat di dalam jaringan Anda untuk berbicara satu sama lain, seperti komputer dan printer di rumah atau kantor.
