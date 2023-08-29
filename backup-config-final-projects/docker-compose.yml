@@ -1,0 +1,19 @@
+version: "3.7"
+services:
+  app:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    image: api-music-image
+    container_name: app-laravel
+    working_dir: /app
+    ports:
+      - 8000:8000
+    volumes:
+      - ./:/app
+    networks:
+      - app-laravel-n
+
+networks:
+  app-laravel-n:
+    driver: bridge
