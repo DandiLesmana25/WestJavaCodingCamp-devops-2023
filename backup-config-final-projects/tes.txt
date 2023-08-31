@@ -1,0 +1,99 @@
+belajar  perintah / comands linux dari
+dasar sampai advance
+
+
+~ls   (list)
+untuk melihat semua file dan folder yang ada 
+di directory saat ini
+
+~mkdir (makedirectory)
+untuk membuat  folder/ directory 
+
+~cd (change directory )
+berpindah dari file/dir saat ini
+ke directory/file lain
+
+
+~touch
+command untuk membuat file
+
+membuat  single file:
+~touch file1.txt
+
+membuat  multiple file
+~touch file1.txt file2.txt file3.txt
+
+
+~nano
+adalah  text editor  yang bisa digunakan untuk 
+mengedit text dalam file 
+
+example:
+~sudo nano file1.txt  (maka akan masuk ke text editor  untuk edit file tersebut)
+
+~cat
+melihat isi file/ text yang ada dalam file
+
+
+~rm (remove)
+menghapus file 
+
+example :
+delete 1 file
+rm filetes.txt
+
+delete semua dile yang ada dalam folder saat ini
+~rm *
+
+
+~cd ../
+berpindah ke directory sebelumnya 
+
+~cd 
+jika mengetikan cd doang maka akan berpindah ke directory home
+
+
+
+~mkdir tes1.txt && cd tes1.txt
+membuat file dan berpindah ke file tersebut 
+
+
+okay  misalkan kita ingin mengcopy
+file kedalam directory/folder lain
+
+~cp 1.txt testfolder/
+akan mencopy file 1.txt kedalam folder testfolder
+
+~cp test.txt learnlinux/day1/
+
+akan mencopy file test.txt
+kedalam folder day1
+
+misalkan kita ingin memindahkan folder/fule ke folder lain
+~mv test.txt learnlinux/day3
+
+akan memindahkanfile test.txt
+ke dalam folder day3
+
+
+memindahkan file ke folder home
+
+~mv test.txt ~/
+
+
+rename file
+~mv tes.txt newtest.txt
+
+melihat detail informasi setiap comands/perintah
+
+~man namaperitah
+
+example:
+~man mv
+~man rm
+~man mkdir
+
+
+
+
+
